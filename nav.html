@@ -1,44 +1,71 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport content="width=device-width, initial-scale="1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Document</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="navbar">
-                    <div class="logo">
-                        <h1>Online <span>Shopping</span> </h1>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-                    <div class="center">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Men</a></li>
-                        <li><a href="">Women</a></li>
-                        <li><a href="">Kids</a></li>
-                        <li><a href="">Offers</a></li>
-                    </ul>
-                </div>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Amazon</div>
 
-                <div class="right">
-                    <ul>
-                        <li><a href=""></a><i class="fa-solid fa-magnifying-glass"></i></li>
-                        <li><a href=""></a><i class="fa-solid fa-user"></i></li>
-                        <li><a href=""></a><i class="fa-solid fa-cart-shopping"></i></li>
-                    </ul>
-                </div>
-               </div>
-               
-               <div class="bottom-nav">
-                <p>Sale up to 50% Biggest discounts.Hurry! Limited Period offer <a href=""> Shop now</a></p>
-            </div>
-            </nav>
-        </header>
-    </body>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Amazon">
+            <button>🔍</button>
+        </div>
+
+        <div class="cart" onclick="addToCart()">
+            🛒 Cart <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero">
+        <img id="slider" src="https://m.media-amazon.com/images/I/71tIrZqybrL._SX3000_.jpg">
+    </section>
+
+    <!-- Product Section -->
+    <h2 class="section-title">Top Deals</h2>
+    <section class="products">
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71UQd2H5pDL._AC_UL320_.jpg">
+            <h3>Wireless Headphones</h3>
+            <p>$29.99</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/81NIli1PuqL._AC_UL320_.jpg">
+            <h3>Smart Watch</h3>
+            <p>$49.99</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/81kRzgjY2xL._AC_UL320_.jpg">
+            <h3>Bluetooth Speaker</h3>
+            <p>$19.99</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <h2 class="section-title">Shop By Category</h2>
+    <section class="categories">
+        <div class="category">Electronics</div>
+        <div class="category">Fashion</div>
+        <div class="category">Home</div>
+        <div class="category">Beauty</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Amazon Clone UI • Created Using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
